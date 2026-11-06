@@ -332,11 +332,4 @@ def main(page: ft.Page):
         ], expand=True)
     )
 
-puerto_azure = int(os.environ.get("PORT", 8000))
-
-ft.app(
-    target=main,
-    view=ft.WEB_BROWSER,
-    host="0.0.0.0",
-    port=puerto_azure
-)
+ft.app(main)
